@@ -32,7 +32,7 @@ app.get('/', function(req, res){
 
 app.get('/500', function(req, res, next){
   process.nextTick(function(){
-    next(new Error('oh no!'));
+  next(new Error('!!!! ERROR !!!!! oh no!'));
   });
 });
 
